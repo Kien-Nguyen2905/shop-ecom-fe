@@ -16,7 +16,7 @@ jobs:
           cache: 'npm'
       - name: Create .env.production file
         run: echo "${{secrets.ENV_PRODUCTION}}" > .env.production
-      - run: yarn ci
+      - run: yarn install
       - run: yarn run build
   deploy:
     runs-on: ubuntu-latest
@@ -40,7 +40,7 @@ jobs:
               echo "Cloning repository done"
               cd ~/${{ secrets.REPO_NAME }}
               echo "Installing dependencies"
-              yarn ci --force
+              yarn install --force
               echo "Installing dependencies done"
               echo "Setting up environment variables"
               echo "${{secrets.ENV_PRODUCTION}}" > .env.production
@@ -61,7 +61,7 @@ jobs:
               echo "${{secrets.ENV_PRODUCTION}}" > .env.production
               echo "Setting up environment variables done"
               echo "Installing dependencies"
-              yarn ci --force
+              yarn install --force
               echo "Installing dependencies done"
               echo "Building application"
               yarn run build
