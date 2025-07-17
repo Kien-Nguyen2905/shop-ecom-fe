@@ -7,7 +7,7 @@
     "dev": "vite --port 3000",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview --port $PORT"
   },
   "dependencies": {
     "@react-spring/web": "^9.7.5",
@@ -18,7 +18,9 @@
     "antd-img-crop": "^4.23.0",
     "axios": "^1.7.7",
     "dayjs": "^1.11.13",
+    "dotenv": "^17.2.0",
     "lodash": "^4.17.21",
+    "pm2": "^6.0.8",
     "query-string": "^9.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

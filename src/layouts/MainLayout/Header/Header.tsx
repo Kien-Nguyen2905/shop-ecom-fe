@@ -1,4 +1,4 @@
-import { LuUser2 } from 'react-icons/lu';
+import { LuUser } from 'react-icons/lu';
 import { RiArrowDropDownLine } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 import useHeader from './userHeader';
@@ -25,7 +25,7 @@ const Header = () => {
         >
           {!profile ? (
             <>
-              <LuUser2 />
+              <LuUser />
               <div onClick={openModal} className="2xl:text-[20px]">
                 Login | Register
               </div>
