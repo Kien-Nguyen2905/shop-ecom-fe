@@ -1,0 +1,30 @@
+export const CUSTOMER_PATHS = {
+  ROOT: '/',
+  ABOUT_US: '/about-us',
+  VERIFY_EMAIL: '/verify-email',
+  OAUTH: '/oauth',
+  FORGOT_PASSWORD: '/forgot-password',
+  PRODUCT: '/product',
+  PRODUCT_DETAIL: '/product/:id',
+  CONTACTUS: '/contact-us',
+  CART: '/cart',
+  CHECKOUT: '/checkout',
+  CHECKOUT_SUCCESS: '/checkout-success',
+  DASHBOARD: {
+    INDEX: '/dashboard',
+    WISHLIST: '/dashboard/wishlist',
+    ORDER: '/dashboard/order',
+  },
+  PAYMENT: '/checkout/payment',
+};
+export const ADMIN_PATHS = {
+  ROOT: '/admin',
+  CATEGORY: '/admin/category',
+  BRAND: '/admin/brand',
+  PRODUCT: '/admin/product',
+  WAREHOUSE: '/admin/warehouse',
+  CUSTOMER: '/admin/customer',
+  REVIEW: '/admin/review',
+  ORDER: '/admin/order',
+  TRANSACTION: '/admin/transaction',
+};

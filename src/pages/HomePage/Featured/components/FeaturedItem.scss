@@ -1,0 +1,19 @@
+.swiper-pagination-bullet-active {
+  background-color: #fcb941;
+}
+
+.featured-carousel {
+  &.swiper {
+    height: 440px;
+  }
+  & .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  & .swiper-pagination {
+    bottom: 8% !important;
+    @media (min-width: 1024px) {
+      bottom: 0% !important;
+    }
+  }
+}
